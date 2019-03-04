@@ -2,17 +2,51 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>BootStrapApp</title>
- </head>
+  <title>Invoice Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style >
+#invoice_table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  float:"left";
+  input[type="text"] {
+       width: 100%;
+       box-sizing: border-box;
+       -webkit-box-sizing:border-box;
+       -moz-box-sizing: border-box;
+  }
+
+}
+
+#invoice_table td, #invoice_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#invoice_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 <body>
-<div id="details">
-
-
+<center>
+ <h1>INVOICE</h1>
+</center>
+<div class="container-fluid">
+  <form>
+  <div class="row">
+    <div id="Details" class="col-md-12"></div>
+    <div id="Table" class="col-md-12"></div>
+    <div id="Amount" class="col-md-12"></div>
+  </div>
+</form>
 </div>
 
-<div id="center">
-
-
-</div>
 </body>
 </html>

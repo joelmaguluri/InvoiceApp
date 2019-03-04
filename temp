@@ -1,30 +1,22 @@
+<div className="container-fluid" style={cont}>
+<center>
+  <div className="row">
+    <div className="col-sm-6" >
 
-<div className=".col-md-6">
-<label for="fname">First Name</label>
-<input type="text" id="fname" name="firstname" placeholder="Your name.."/><br/>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Your last name.."/><br/>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Your last name.."/><br/>
-</div>
-<div className=".col-md-6">
-<label for="fname">First Name</label>
-<input type="text" id="fname" name="firstname" placeholder="Your name.."/><br/>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Your last name.."/><br/>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Your last name.."/><br/>
-</div>
-<div className=".col-md-6">
-<label for="fname">First Name</label>
-<input type="text" id="fname" name="firstname" placeholder="Your name.."/><br/>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Your last name.."/><br/>
-<label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Your last name.."/><br/>
+    <div class="input-group" style={inputbox}>
+         <span className="input-group-addon">Company</span>
+         <input className="Comnpany"/>
+   </div>
+       <textarea className="From" placeholder="Who is this invoice from? (required)" style={textholder_1}></textarea>
+       <textarea className="To" placeholder="Who is this invoice to? (required)" style={textholder_2}></textarea>
 
-var divStyle = {
-  background: "#eee",
-  padding: "20px",
-  margin: "20px"
-};
+    </div>
+    <div className="col-sm-6" >
+    <button type="button" className="btn btn-primary" style={inputbox2}>
+    <span class="ion-plus-round"></span>
+         Add Item
+    </button>
+    </div>
+  </div>
+</center>
+</div>
