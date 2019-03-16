@@ -1,22 +1,59 @@
-<div className="container-fluid" style={cont}>
-<center>
-  <div className="row">
-    <div className="col-sm-6" >
-
-    <div class="input-group" style={inputbox}>
-         <span className="input-group-addon">Company</span>
-         <input className="Comnpany"/>
-   </div>
-       <textarea className="From" placeholder="Who is this invoice from? (required)" style={textholder_1}></textarea>
-       <textarea className="To" placeholder="Who is this invoice to? (required)" style={textholder_2}></textarea>
-
+<div className="row" >
+   <center>
+   <div className="col-md-12" >
+     <table style={tablestyle}  id="invoice_table">
+   <colgroup>
+    <col span="1" style={{width: "40%",}}/>
+    <col span="1" style={{width: "20%",}}/>
+    <col span="1" style={{width: "10%"}}/>
+    <col span="1" style={{width: "10%"}}/>
+    </colgroup>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Rate</th>
+        <th>Amount</th>
+      </tr>
+    </table>
+    <div class="form-row" style={plus_mins}>
+    <div class="form-row__content">
+      <input class="form-input qtyminus" type="button" value="-" field="quantity-test" />
+      <input class="form-input qty" id="inc_dec" type="text" name="quantity-test" value="0" />
+      <input class="form-input qtyplus" type="button" value="+" field="quantity-test" />
     </div>
-    <div className="col-sm-6" >
-    <button type="button" className="btn btn-primary" style={inputbox2}>
-    <span class="ion-plus-round"></span>
-         Add Item
-    </button>
     </div>
   </div>
-</center>
-</div>
+ </center>
+ </div>
+ );
+}
+var new_row=()=>{return(
+    <tr >
+     <td>
+           <div style="margin-right: 6px;">
+                   <input type="text" style="width:100%;"/>
+           </div>
+     </td>
+       <td>
+           <div style="margin-right: 6px;">
+                   <input type="text" value="1"  style="width:100%;"/>
+           </div>
+       </td>
+       <td >
+       <div style="margin-right: 6px;" onchange ="calculate_amount()">
+       </div>
+       <input type="text" style="width:100%;"/>
+       </td>
+       <td >
+       <div style="margin-right: 6px;" >
+               <input type="text" style="width:100%;" id=""/>
+       </div>
+       </td>
+       </tr>)};
+
+
+       var plus_mins={
+       marginTop:"10%",
+       float:"right",
+       marginRight:"8%"
+       }

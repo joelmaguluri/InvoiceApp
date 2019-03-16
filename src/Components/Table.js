@@ -1,87 +1,58 @@
 import React, { Component } from 'react';
-var tablestyle= {
-  fontFamily: "arial, sans-serif",
-  borderCollapse:"collapse",
-  width:"80%",
-  marginTop:"2%",
-  marginLeft:"1%",
-  marginRight:"2%",
-  border:"1"
-}
-var new_row=`
-       <tr>
-       <td>
-             <div style="margin-right: 6px;">
-                     <input type="text" style="width:100%;">
-             </div>
-       </td>
-         <td>
-             <div style="margin-right: 6px;">
-                     <input type="text" style="width:100%;">
-             </div>
-         </td>
-         <td >
-             <div style="margin-right: 6px;">
-                     <input type="text" style="width:100%;">
-             </div>
-         </td>
-         <td >
-             <div style="margin-right: 6px;">
-                     <input type="text" style="width:100%;">
-             </div>
-         </td>`
-var plus_mins={
-marginTop:"10%",
-float:"right",
-marginRight:"8%"
-}
 class Table extends Component {
-  clickme_plus=()=>{
-   console.log('increment');
-   var button=document.getElementById('inc_dec');
-   button.value=+button.value+1;
-   var table=document.getElementById('invoice_table');
-   table.innerHTML=table.innerHTML+new_row;
-  }
-  clickme_minus=()=>{
-   console.log('decrement');
-    var button=document.getElementById('inc_dec');
-    if(+button.value!==0){
-        button.value=+button.value-1;
-   }
 
-  }
   render() {
     return (
-   <div className="row" >
-      <center>
-      <div className="col-md-12" >
-        <table style={tablestyle} id="invoice_table">
-      <colgroup>
-       <col span="1" style={{width: "40%",}}/>
-       <col span="1" style={{width: "20%",}}/>
-       <col span="1" style={{width: "10%"}}/>
-       <col span="1" style={{width: "10%"}}/>
-       </colgroup>
-         <tr>
-           <th >Item</th>
-           <th>Quantity</th>
-           <th>Rate</th>
-           <th>Amount</th>
-         </tr>
-       </table>
-       <div class="form-row" style={plus_mins}>
-       <div class="form-row__content">
-         <input class="form-input qtyminus" type="button" value="-" onClick={this.clickme_minus} field="quantity-test" />
-         <input class="form-input qty" id="inc_dec" type="text" name="quantity-test" value="0" />
-         <input class="form-input qtyplus" type="button" value="+" onClick={this.clickme_plus} field="quantity-test" />
-       </div>
-       </div>
-     </div>
-    </center>
+<div>
+<div class="limiter">
+<div class="container-table100">
+<div class="wrap-table100">
+    <div class="table100">
+            <table>
+                <thead>
+                    <tr class="table100-head">
+                        <th class="column1">Date</th>
+                        <th class="column2">Order ID</th>
+                        <th class="column3">Name</th>
+                        <th class="column4">Price</th>
+                        <th class="column5">Quantity</th>
+                        <th class="column6">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td class="column1">2017-09-29 01:22</td>
+                            <td class="column2">200398</td>
+                            <td class="column3">iPhone X 64Gb Grey</td>
+                            <td class="column4">$999.00</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="column1">2017-09-28 05:57</td>
+                            <td class="column2">200397</td>
+                            <td class="column3">Samsung S8 Black</td>
+                            <td class="column4">$756.00</td>
+                            <td class="column5">1</td>
+                            <td class="column6">$756.00</td>
+                        </tr>
+                </tbody>
+            </table>
     </div>
+</div>
+</div>
+</div>
+</div>
+
     );
   }
 }
 
 export default Table;
+
+
+
+
+
+
+
