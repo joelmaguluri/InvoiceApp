@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Table V01</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <!--===============================================================================================-->
+  	<link rel="stylesheet" type="text/css" href="css/util.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="container-fluid">
- <form>
- <div class="row">
-  <div id="Details" class="col-md-12" ></div>
-  <div id="Table" class="col-md-12"> </div>
-	<div id="Amount" class="col-md-12"></div>
-	</div>
- </form>
- </div>
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+  <center>
+      <div class="title">
+    <h1>Invoice</h1>
+  </div>
+     </center>
+     <div class="container">
+     <h2><b><input type="text" placeholder="CompanyName"></b></h2>
+      <div class="row">
+      <div class="col-xs-6 col-sm-2"><img src="ths-trans.png" alt="Smiley face" height="100%" width="100%"></div>
+      <div class="col-xs-6 col-sm-4"><em><textarea rows="7" cols="40" placeholder="CompanyAddress"></textarea></em></div>
+      <div class="col-xs-6 col-sm-2"></div>
+      <div class="col-xs-6 col-sm-4">
+        <div>
+        <table id="meta">
+            <tbody>
+             <tr>
+                   <td class="meta-head">Invoice #</td>
+                    <td><textarea>000123</textarea></td>
+             </tr>
+             <tr>
 
-</body>
-</html>
+                    <td class="meta-head">Date</td>
+                    <td><textarea id="date">December 15, 2009</textarea></td>
+             </tr>
+
+            </tbody>
+            </table>
+        </div>
+
+     </div>
+      </div>
+      <div class="row">
+          <div class="line" ></div>
+
+      </div>
+      <div class="row">
+
+
+      </div>
+      <div class="row">
+
+
+      </div>
+      <div class="row" id="customerdetails">
+        <div class="col-md-4">
+        <h4><b>Customer Name</b><input type="text" placeholder="Enter Customer Name"></h4>
+        </div>
+        <div class="col-md-1">
+            <div class="well"></div>
+        </div>
+        <div class="col-md-1">
+            <div class="well"></div>
+        </div>
+        <div class="col-md-1">
+            <div class="well"></div>
+        </div>
+        <div class="col-md-1">
+            <div class="well"></div>
+        </div>
+        <div class="col-md-4">
+          <div>
+          <h4>  <b>Customer Address  <b></h4>
+          </div>
+          <div>
+          <h2><textarea rows="7" cols="40" placeholder="Enter Customer Address"></textarea></em></h2>
+         </div>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+    <div class="row" id="customerdetails2">
+      <div class="col-md-4">
+      <h4><b>Phone Number</b><input type="text" placeholder="Enter Phone Number"></h4>
+      </div>
+      <div class="col-md-1">
+          <div class="well"></div>
+      </div>
+      <div class="col-md-1">
+          <div class="well"></div>
+      </div>
+      <div class="col-md-1">
+          <div class="well"></div>
+      </div>
+      <div class="col-md-1">
+          <div class="well"></div>
+      </div>
+      <div class="col-md-4">
+        <div>
+        <h4> <b>Email<b></h4>
+        </div>
+        <div>
+        <h4><input type="text" placeholder="Enter email"></h4></em>
+       </div>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+  </div>
+    <div class="row">
+        <div class="line" ></div>
+
+    </div>
+  </div>
+
+  <!--===============================================================================================-->
+  	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  	<script src="vendor/bootstrap/js/popper.js"></script>
+  	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  	<script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  	<script src="js/main.js"></script>
+  	<script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js"></script>
+
+  </body>
+  </html>
